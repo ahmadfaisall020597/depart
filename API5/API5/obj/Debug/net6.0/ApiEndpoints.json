@@ -1,47 +1,5 @@
 [
   {
-    "ContainingType": "API5.Controllers.AccountController",
-    "Method": "GetAllAccounts",
-    "RelativePath": "api/Account/getAllAccounts",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API5.Controllers.AccountController",
-    "Method": "Login",
-    "RelativePath": "api/Account/login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "API5.Controllers.LoginRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API5.Controllers.AccountController",
-    "Method": "Register",
-    "RelativePath": "api/Account/register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "API5.Controllers.RegisterRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "API5.Controllers.DepartmentsController",
     "Method": "GetAllDepartments",
     "RelativePath": "api/Departments",
@@ -217,6 +175,32 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API5.Controllers.RegisterController",
+    "Method": "GetAllData",
+    "RelativePath": "api/Register/alldata",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API5.Controllers.RegisterController",
+    "Method": "Register",
+    "RelativePath": "api/Register/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "API5.Models.RegisterVM",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

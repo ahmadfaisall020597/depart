@@ -7,5 +7,6 @@ namespace API5.Repository.Interfaces
         Task<Account> GetByUsernameAsync(string username);
         Task AddAsync(Account account);
         Task<List<Account>> GetAllAccountsAsync();
+        Task<Account> GetByAccountIdAsync(string accountId);
     }
 }

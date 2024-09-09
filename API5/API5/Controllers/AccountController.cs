@@ -1,146 +1,157 @@
-﻿using API5.Context;
-using API5.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using BCrypt.Net;
-using API5.Repository.Interfaces;
+﻿//using API5.Context;
+//using API5.Models;
+//using Microsoft.AspNetCore.Mvc;
+//using System.Linq;
+//using System.Threading.Tasks;
+//using Microsoft.EntityFrameworkCore;
+//using BCrypt.Net;
+//using API5.Repository.Interfaces;
 
-namespace API5.Controllers
-{
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AccountController : ControllerBase
-    {
-        private readonly IAccountRepository _accountRepository;
-        private readonly IEmployeeRepository _employeeRepository;
+//namespace API5.Controllers
+//{
+//    [Route("api/[controller]")]
+//    [ApiController]
+//    public class AccountController : ControllerBase
+//    {
+//        private readonly IAccountRepository _accountRepository;
+//        private readonly IEmployeeRepository _employeeRepository;
 
-        public AccountController(IAccountRepository accountRepository, IEmployeeRepository employeeRepository)
-        {
-            _accountRepository = accountRepository;
-            _employeeRepository = employeeRepository;
-        }
+//        public AccountController(IAccountRepository accountRepository, IEmployeeRepository employeeRepository)
+//        {
+//            _accountRepository = accountRepository;
+//            _employeeRepository = employeeRepository;
+//        }
 
-        [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterRequest request)
-        {
-            if (string.IsNullOrEmpty(request.Password) || string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.EmployeeId))
-            {
-                return BadRequest("All fields except Username are required.");
-            }
+//        [HttpPost("register")]
+//        public async Task<IActionResult> Register([FromBody] RegisterRequest request)
+//        {
+//            if (string.IsNullOrEmpty(request.Password) || string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.EmployeeId))
+//            {
+//                return BadRequest("All fields except Username are required.");
+//            }
 
-            var employee = await _employeeRepository.GetByEmployeeIdAsync(request.EmployeeId);
+//            var employee = await _employeeRepository.GetByEmployeeIdAsync(request.EmployeeId);
 
-            if (employee == null)
-            {
-                return BadRequest("Employee not found.");
-            }
+//            if (employee == null)
+//            {
+//                return BadRequest("Employee not found.");
+//            }
 
-            string baseUsername = string.IsNullOrEmpty(request.Username)
-                ? $"{employee.FirstName.ToLower()}{employee.LastName.ToLower()}".Replace(" ", "")
-                : request.Username.ToLower().Replace(" ", "");
+//            if (employee.Email != request.Email)
+//            {
+//                return BadRequest("Email does not match the employee's email.");
+//            }
 
-            string username = await GenerateUniqueUsername(baseUsername);
+//            var existingAccount = await _accountRepository.GetByAccountIdAsync(request.EmployeeId);
 
-            var account = new Account
-            {
-                Username = username,
-                Password = BCrypt.Net.BCrypt.HashPassword(request.Password),
-                AccountId = request.EmployeeId,
-                Employee = employee
-            };
+//            if (existingAccount != null)
+//            {
+//                return BadRequest("An account with this AccountId already exists.");
+//            }
 
-            await _accountRepository.AddAsync(account);
+//            string baseUsername = $"{request.FirstName.ToLower()}{request.LastName.ToLower()}".Replace(" ", "");
+//            string username = await GenerateUniqueUsername(baseUsername);
 
-            var response = new
-            {
-                status = 200,
-                message = "Registration successful.",
-                data = new
-                {
-                    employeeId = employee.Employee_Id,
-                    name = $"{employee.FirstName} {employee.LastName}",
-                    departmentName = employee.Department?.Dept_Name ?? "No Department",
-                    username,
-                    email = employee.Email
-                }
-            };
+//            var account = new Account
+//            {
+//                Username = username,
+//                Password = BCrypt.Net.BCrypt.HashPassword(request.Password),
+//                AccountId = request.EmployeeId,
+//                Employee = employee
+//            };
 
-            return Ok(response);
-        }
+//            await _accountRepository.AddAsync(account);
 
-        private async Task<string> GenerateUniqueUsername(string baseUsername)
-        {
-            string username = baseUsername;
-            int suffix = 1;
+//            var response = new
+//            {
+//                status = 200,
+//                message = "Registration successful.",
+//                data = new
+//                {
+//                    employeeId = employee.Employee_Id,
+//                    name = $"{employee.FirstName} {employee.LastName}",
+//                    departmentName = employee.Department?.Dept_Name ?? "No Department",
+//                    username,
+//                    email = employee.Email
+//                }
+//            };
 
-            while (await _accountRepository.GetByUsernameAsync(username) != null)
-            {
-                username = $"{baseUsername}{suffix:D3}";
-                suffix++;
-            }
+//            return Ok(response);
+//        }
 
-            return username;
-        }
 
-        [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequest request)
-        {
-            if (string.IsNullOrEmpty(request.Username) || string.IsNullOrEmpty(request.Password))
-            {
-                return BadRequest("Username and Password are required.");
-            }
+//        private async Task<string> GenerateUniqueUsername(string baseUsername)
+//        {
+//            string username = baseUsername;
+//            int suffix = 1;
 
-            var account = await _accountRepository.GetByUsernameAsync(request.Username);
+//            while (await _accountRepository.GetByUsernameAsync(username) != null)
+//            {
+//                username = $"{baseUsername}{suffix:D3}";
+//                suffix++;
+//            }
 
-            if (account == null || !BCrypt.Net.BCrypt.Verify(request.Password, account.Password))
-            {
-                return Unauthorized("Invalid username or password.");
-            }
+//            return username;
+//        }
 
-            return Ok(new { status = 200, message = "Login successful." });
-        }
+//        [HttpPost("login")]
+//        public async Task<IActionResult> Login([FromBody] LoginRequest request)
+//        {
+//            if (string.IsNullOrEmpty(request.Username) || string.IsNullOrEmpty(request.Password))
+//            {
+//                return BadRequest("Username and Password are required.");
+//            }
 
-        [HttpGet("getAllAccounts")]
-        public async Task<IActionResult> GetAllAccounts()
-        {
-            var accounts = await _accountRepository.GetAllAccountsAsync();
+//            var account = await _accountRepository.GetByUsernameAsync(request.Username);
 
-            if (accounts == null || accounts.Count == 0)
-            {
-                return NotFound("No accounts found.");
-            }
+//            if (account == null || !BCrypt.Net.BCrypt.Verify(request.Password, account.Password))
+//            {
+//                return Unauthorized("Invalid username or password.");
+//            }
 
-            var response = accounts.Select(account => new
-            {
-                account_Id = account.AccountId,
-                fullName = $"{account.Employee?.FirstName} {account.Employee?.LastName}",
-                dept_Name = account.Employee?.Department?.Dept_Name ?? "No Department",
-                email = account.Employee?.Email,
-                username = account.Username
-            }).ToList();
+//            return Ok(new { status = 200, message = "Login successful." });
+//        }
 
-            return Ok(new
-            {
-                statusCode = 200,
-                status = "Success",
-                message = $"{accounts.Count} accounts retrieved successfully.",
-                data = response
-            });
-        }
-    }
-public class RegisterRequest
-    {
-        public string? Username { get; set; }
-        public string Password { get; set; } = string.Empty;
-        public string Email { get; set; } = string.Empty;
-        public string EmployeeId { get; set; } = string.Empty;
-    }
+//        [HttpGet("getAllAccounts")]
+//        public async Task<IActionResult> GetAllAccounts()
+//        {
+//            var accounts = await _accountRepository.GetAllAccountsAsync();
 
-    public class LoginRequest
-    {
-        public string Username { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
-    }
-}
+//            if (accounts == null || accounts.Count == 0)
+//            {
+//                return NotFound("No accounts found.");
+//            }
+
+//            var response = accounts.Select(account => new
+//            {
+//                account_Id = account.AccountId,
+//                fullName = $"{account.Employee?.FirstName} {account.Employee?.LastName}",
+//                dept_Name = account.Employee?.Department?.Dept_Name ?? "No Department",
+//                email = account.Employee?.Email,
+//                username = account.Username
+//            }).ToList();
+
+//            return Ok(new
+//            {
+//                statusCode = 200,
+//                status = "Success",
+//                message = $"{accounts.Count} accounts retrieved successfully.",
+//                data = response
+//            });
+//        }
+//    }
+//    public class RegisterRequest
+//    {
+//        public string? FirstName { get; set; }
+//        public string? LastName { get; set; }
+//        public string Password { get; set; } = string.Empty;
+//        public string Email { get; set; } = string.Empty;
+//        public string EmployeeId { get; set; } = string.Empty;
+//    }
+
+//    public class LoginRequest
+//    {
+//        public string Username { get; set; } = string.Empty;
+//        public string Password { get; set; } = string.Empty;
+//    }
+//}

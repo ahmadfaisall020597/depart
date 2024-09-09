@@ -26,6 +26,12 @@ namespace API5.Repository
                 .FirstOrDefaultAsync(a => a.Username == username);
         }
 
+        public async Task<Account> GetByAccountIdAsync(string accountId)
+        {
+            return await _context.Accounts
+                .FirstOrDefaultAsync(a => a.AccountId == accountId);
+        }
+
         public async Task AddAsync(Account account)
         {
             _context.Accounts.Add(account);

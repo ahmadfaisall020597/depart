@@ -3,64 +3,88 @@
   "WorkspaceRootPath": "D:\\Documentation\\Backend API5\\API5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\repository\\registerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\repository\\registerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\viewmodel\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\viewmodel\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\repository\\interfaces\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\repository\\interfaces\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\viewmodel\\employeevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\viewmodel\\employeevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\repository\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\repository\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\repository\\interfaces\\iregisterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\repository\\interfaces\\iregisterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\controllers\\employeevmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\controllers\\employeevmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\repository\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\repository\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\migrations\\20240908041753_add_modelaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\migrations\\20240908041753_add_modelaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\repository\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\repository\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\repository\\interfaces\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\repository\\interfaces\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\context\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\context\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\repository\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\repository\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\migrations\\20240908041753_add_modelaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\migrations\\20240908041753_add_modelaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|solutionrelative:api5\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E42942DE-4DC7-4E5F-876F-CB44F88B8B3F}|API5\\API5.csproj|d:\\documentation\\backend api5\\api5\\api5\\migrations\\20240906075218_add model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -85,7 +109,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -93,123 +117,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountRepository.cs",
-              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\AccountRepository.cs",
-              "RelativeDocumentMoniker": "API5\\Repository\\AccountRepository.cs",
-              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\AccountRepository.cs",
-              "RelativeToolTip": "API5\\Repository\\AccountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T02:41:53.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IEmployeeRepository.cs",
-              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\Interfaces\\IEmployeeRepository.cs",
-              "RelativeDocumentMoniker": "API5\\Repository\\Interfaces\\IEmployeeRepository.cs",
-              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\Interfaces\\IEmployeeRepository.cs",
-              "RelativeToolTip": "API5\\Repository\\Interfaces\\IEmployeeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T02:40:50.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IAccountRepository.cs",
-              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\Interfaces\\IAccountRepository.cs",
-              "RelativeDocumentMoniker": "API5\\Repository\\Interfaces\\IAccountRepository.cs",
-              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\Interfaces\\IAccountRepository.cs",
-              "RelativeToolTip": "API5\\Repository\\Interfaces\\IAccountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Title": "EmployeeVM.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\ViewModel\\EmployeeVM.cs",
+              "RelativeDocumentMoniker": "API5\\ViewModel\\EmployeeVM.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\ViewModel\\EmployeeVM.cs",
+              "RelativeToolTip": "API5\\ViewModel\\EmployeeVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T02:39:02.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EmployeesController.cs",
-              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\EmployeesController.cs",
-              "RelativeDocumentMoniker": "API5\\Controllers\\EmployeesController.cs",
-              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\EmployeesController.cs",
-              "RelativeToolTip": "API5\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAwwGoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T04:24:04.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DepartmentsController.cs",
-              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\DepartmentsController.cs",
-              "RelativeDocumentMoniker": "API5\\Controllers\\DepartmentsController.cs",
-              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\DepartmentsController.cs",
-              "RelativeToolTip": "API5\\Controllers\\DepartmentsController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T04:23:57.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "API5\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "API5\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAADwv5EAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T04:23:27.139Z",
+              "WhenOpened": "2024-09-09T14:55:42.707Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Program.cs",
-              "RelativeDocumentMoniker": "API5\\Program.cs",
-              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Program.cs",
-              "RelativeToolTip": "API5\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAaAAAAAAAAAA==",
+              "Title": "RegisterRepository.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\RegisterRepository.cs",
+              "RelativeDocumentMoniker": "API5\\Repository\\RegisterRepository.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\RegisterRepository.cs",
+              "RelativeToolTip": "API5\\Repository\\RegisterRepository.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowD0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T03:53:50.822Z",
+              "WhenOpened": "2024-09-09T14:18:16.373Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "API5\\Models\\Employee.cs",
-              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Models\\Employee.cs",
-              "RelativeToolTip": "API5\\Models\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T04:01:37.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\EmployeeRepository.cs",
-              "RelativeDocumentMoniker": "API5\\Repository\\EmployeeRepository.cs",
-              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\EmployeeRepository.cs",
-              "RelativeToolTip": "API5\\Repository\\EmployeeRepository.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwG4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T02:48:46.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "DepartmentRepository.cs",
               "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\DepartmentRepository.cs",
               "RelativeDocumentMoniker": "API5\\Repository\\DepartmentRepository.cs",
@@ -222,31 +156,202 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "20240908041753_add_modelAccount.cs",
-              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Migrations\\20240908041753_add_modelAccount.cs",
-              "RelativeDocumentMoniker": "API5\\Migrations\\20240908041753_add_modelAccount.cs",
-              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Migrations\\20240908041753_add_modelAccount.cs",
-              "RelativeToolTip": "API5\\Migrations\\20240908041753_add_modelAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "API5\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "API5\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAcwJUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T04:17:53.662Z"
+              "WhenOpened": "2024-09-08T04:23:27.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "API5\\Controllers\\RegisterController.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "API5\\Controllers\\RegisterController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T04:19:28.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeVMController.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\EmployeeVMController.cs",
+              "RelativeDocumentMoniker": "API5\\Controllers\\EmployeeVMController.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\EmployeeVMController.cs",
+              "RelativeToolTip": "API5\\Controllers\\EmployeeVMController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T13:47:49.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "API5\\Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "API5\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwJAAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T04:24:04.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterVM.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\ViewModel\\RegisterVM.cs",
+              "RelativeDocumentMoniker": "API5\\ViewModel\\RegisterVM.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\ViewModel\\RegisterVM.cs",
+              "RelativeToolTip": "API5\\ViewModel\\RegisterVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T14:17:36.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Program.cs",
+              "RelativeDocumentMoniker": "API5\\Program.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Program.cs",
+              "RelativeToolTip": "API5\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T03:53:50.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRegisterRepository.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\Interfaces\\IRegisterRepository.cs",
+              "RelativeDocumentMoniker": "API5\\Repository\\Interfaces\\IRegisterRepository.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\Interfaces\\IRegisterRepository.cs",
+              "RelativeToolTip": "API5\\Repository\\Interfaces\\IRegisterRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T03:17:28.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "API5\\Repository\\EmployeeRepository.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\EmployeeRepository.cs",
+              "RelativeToolTip": "API5\\Repository\\EmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:48:46.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "API5\\Models\\Employee.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Models\\Employee.cs",
+              "RelativeToolTip": "API5\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T04:01:37.26Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "API5\\Models\\Department.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Models\\Department.cs",
+              "RelativeToolTip": "API5\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T04:01:28.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IDepartmentRepository.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\Interfaces\\IDepartmentRepository.cs",
+              "RelativeDocumentMoniker": "API5\\Repository\\Interfaces\\IDepartmentRepository.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\Interfaces\\IDepartmentRepository.cs",
+              "RelativeToolTip": "API5\\Repository\\Interfaces\\IDepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T14:20:34.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IAccountRepository.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\Interfaces\\IAccountRepository.cs",
+              "RelativeDocumentMoniker": "API5\\Repository\\Interfaces\\IAccountRepository.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\Interfaces\\IAccountRepository.cs",
+              "RelativeToolTip": "API5\\Repository\\Interfaces\\IAccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:39:02.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "MyContext.cs",
               "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Context\\MyContext.cs",
               "RelativeDocumentMoniker": "API5\\Context\\MyContext.cs",
               "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Context\\MyContext.cs",
               "RelativeToolTip": "API5\\Context\\MyContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T03:53:29.111Z"
+              "WhenOpened": "2024-09-08T03:53:29.111Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "API5\\Repository\\AccountRepository.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\AccountRepository.cs",
+              "RelativeToolTip": "API5\\Repository\\AccountRepository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:41:53.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "API5\\Repository\\Interfaces\\IEmployeeRepository.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Repository\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeToolTip": "API5\\Repository\\Interfaces\\IEmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:40:50.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Account.cs",
               "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Models\\Account.cs",
               "RelativeDocumentMoniker": "API5\\Models\\Account.cs",
@@ -259,32 +364,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Department.cs",
-              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Models\\Department.cs",
-              "RelativeDocumentMoniker": "API5\\Models\\Department.cs",
-              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Models\\Department.cs",
-              "RelativeToolTip": "API5\\Models\\Department.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "20240908041753_add_modelAccount.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Migrations\\20240908041753_add_modelAccount.cs",
+              "RelativeDocumentMoniker": "API5\\Migrations\\20240908041753_add_modelAccount.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Migrations\\20240908041753_add_modelAccount.cs",
+              "RelativeToolTip": "API5\\Migrations\\20240908041753_add_modelAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T04:01:28.777Z",
+              "WhenOpened": "2024-09-08T04:17:53.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RegisterController.cs",
-              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\RegisterController.cs",
-              "RelativeDocumentMoniker": "API5\\Controllers\\RegisterController.cs",
-              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\RegisterController.cs",
-              "RelativeToolTip": "API5\\Controllers\\RegisterController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "API5\\Controllers\\DepartmentsController.cs",
+              "ToolTip": "D:\\Documentation\\Backend API5\\API5\\API5\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "API5\\Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T04:19:28.267Z"
+              "WhenOpened": "2024-09-08T04:23:57.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "20240906075218_add model.cs",
               "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Migrations\\20240906075218_add model.cs",
               "RelativeDocumentMoniker": "API5\\Migrations\\20240906075218_add model.cs",
@@ -296,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "20240906074329_tambah account.cs",
               "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\Migrations\\20240906074329_tambah account.cs",
               "RelativeDocumentMoniker": "API5\\Migrations\\20240906074329_tambah account.cs",
@@ -308,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "20240908041004_accountmig.cs",
               "DocumentMoniker": "C:\\Users\\CS-FAISAL\\Downloads\\API5\\API5\\Migrations\\20240908041004_accountmig.cs",
               "ToolTip": "C:\\Users\\CS-FAISAL\\Downloads\\API5\\API5\\Migrations\\20240908041004_accountmig.cs",
@@ -318,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Documentation\\Backend API5\\API5\\API5\\appsettings.json",
               "RelativeDocumentMoniker": "API5\\appsettings.json",

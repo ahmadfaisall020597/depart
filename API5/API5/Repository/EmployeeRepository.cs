@@ -41,12 +41,20 @@ namespace API5.Repository
 
         public int AddEmployee(Employee employee)
         {
+
+            var emailExists = _myContext.Employees
+            .Any(e => e.Email == employee.Email);
+
+            if (emailExists)
+            {
+                return -1;
+            }
+
             var departmentExists = _myContext.Departments
                 .Any(d => d.Dept_Id == employee.Dept_Id);
 
             if (!departmentExists)
             {
-                // Assign a default department ID if the department does not exist
                 employee.Dept_Id = "DEFAULT_ID";
             }
 
@@ -104,7 +112,7 @@ namespace API5.Repository
             return _myContext.Employees.ToList();
         }
 
-        public async Task<Employee> GetByEmployeeIdAsync(object employeeId)
+        public async Task<Employee> GetByEmployeeIdAsync(string employeeId)
         {
             if (employeeId == null)
             {
@@ -114,6 +122,11 @@ namespace API5.Repository
             return await _myContext.Employees
                 .Include(e => e.Department)
                 .FirstOrDefaultAsync(e => e.Employee_Id == employeeId.ToString());
+        }
+        public async Task<Employee?> GetByEmailAsync(string email)
+        {
+            return await _myContext.Employees
+                .FirstOrDefaultAsync(e => e.Email == email);
         }
 
     }

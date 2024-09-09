@@ -1,61 +1,88 @@
-﻿//using System;
-//using System.Diagnostics.Metrics;
-//using System.Threading.Tasks;
-//using API5.Context;
-//using API5.Models;
-//using API5.Repository.Interfaces;
-//using Microsoft.EntityFrameworkCore;
+﻿using API5.Context;
+using API5.Models;
+using API5.Repositories.Interfaces;
+using API5.Repository.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 
-//namespace API5.Repository
-//{
-//    public class RegisterRepository : IRegisterRepository
-//    {
-//        private readonly MyContext _myContext;
-//        private int _counter;
+namespace API5.Repository
+{
+    public class RegisterRepository : IRegisterRepository
+    {
+        private readonly MyContext _myContext;
 
-//        public RegisterRepository(MyContext myContext)
-//        {
-//            _myContext = myContext;
-//        }
+        public RegisterRepository(MyContext context)
+        {
+            _myContext = context;
+        }
 
-//        public async Task CreateAccountAsync(RegisterVM registerVM)
-//        {
+        public async Task<Employee> GetEmployeeByEmailAsync(string email)
+        {
+            return await _myContext.Employees
+                .Include(e => e.Department)
+                .FirstOrDefaultAsync(e => e.Email == email);
+        }
 
-//            var employee = await _myContext.Employees
-//                .FirstOrDefaultAsync(e => e.Employee_Id == registerVM.EmployeeId);
+        public async Task<Department> GetDepartmentByIdAsync(string deptId)
+        {
+            return await _myContext.Departments
+                .FirstOrDefaultAsync(d => d.Dept_Id == deptId);
+        }
 
-//            if (employee == null)
-//            {
-//                throw new ArgumentException("Employee not found.");
-//            }
+        public async Task<Account> GetAccountByEmailAsync(string email)
+        {
+            return await _myContext.Accounts
+                .Include(a => a.Employee)
+                .FirstOrDefaultAsync(a => a.Employee.Email == email);
+        }
 
-          
-//            var newAccount = new Account
-//            {
-//                AccountId = registerVM.EmployeeId,
-//                Username = GenerateUsername(employee.FirstName, employee.LastName),
-//                Password = registerVM.Password
-//            };
+        public async Task<string> GenerateUniqueUsernameAsync(string baseUsername)
+        {
+            string username = baseUsername;
+            int suffix = 1;
 
-//            _myContext.Accounts.Add(newAccount);
-//            await _myContext.SaveChangesAsync();
-//        }
+            while (await _myContext.Accounts.AnyAsync(a => a.Username == username))
+            {
+                username = $"{baseUsername}{suffix:D3}";
+                suffix++;
+            }
 
-//        public async Task<Account> GetAccountByEmployeeIdAsync(string employeeId)
-//        {
-//            return await _myContext.Accounts
-//                .Include(a => a.Employee)
-//                .FirstOrDefaultAsync(a => a.AccountId == employeeId);
-//        }
+            return username;
+        }
 
-//        private string GenerateUsername(string firstName, string lastName)
-//        {
-         
-//            _counter++;
-//            var suffix = _counter.ToString("D3");
+        public async Task AddAccountAsync(Account account)
+        {
+            _myContext.Accounts.Add(account);
+            await _myContext.SaveChangesAsync();
+        }
 
-//            return $"{firstName}.{lastName}{suffix}";
-//        }
-//    }
-//}
-
+        public async Task<List<EmployeeAccountData>> GetAllEmployeeAccountDataAsync()
+        {
+            return await _myContext.Employees
+                .Include(e => e.Department)
+                .Join(_myContext.Accounts,
+                    e => e.Employee_Id,
+                    a => a.AccountId,
+                    (e, a) => new EmployeeAccountData
+                    {
+                        EmployeeId = e.Employee_Id,
+                        Name = $"{e.FirstName} {e.LastName}",
+                        DepartmentName = e.Department != null ? e.Department.Dept_Name : "No Department",
+                        Username = a.Username,
+                        Email = e.Email
+                    })
+                .ToListAsync();
+        }
+        public class EmployeeAccountData
+        {
+            public string EmployeeId { get; set; }
+            public string Name { get; set; }
+            public string DepartmentName { get; set; }
+            public string Username { get; set; }
+            public string Email { get; set; }
+        }
+    }
+}

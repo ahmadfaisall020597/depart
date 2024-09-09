@@ -36,7 +36,7 @@ namespace API5.Migrations
 
                     b.HasKey("Username");
 
-                    b.ToTable("Accounts");
+                    b.ToTable("Accounts", (string)null);
                 });
 
             modelBuilder.Entity("API5.Models.Department", b =>
@@ -54,7 +54,7 @@ namespace API5.Migrations
 
                     b.HasKey("Dept_Id");
 
-                    b.ToTable("Departments");
+                    b.ToTable("Departments", (string)null);
                 });
 
             modelBuilder.Entity("API5.Models.Employee", b =>
@@ -81,7 +81,7 @@ namespace API5.Migrations
 
                     b.HasIndex("Dept_Id");
 
-                    b.ToTable("Employees");
+                    b.ToTable("Employees", (string)null);
                 });
 
             modelBuilder.Entity("API5.Models.Employee", b =>

@@ -96,12 +96,19 @@ namespace API5.Controllers
                     Data = employee
                 });
             }
-            else
+            else if (addEmployee == -1)
+            {
+                return NotFound(new
+                {
+                    Status = "400",
+                    Message = "Email Already exists"
+                });
+            } else
             {
                 return NotFound(new
                 {
                     Status = 404,
-                    Message = "Data Gagal Ditambahkan"
+                    Message = "Data gagal Ditambahkan"
                 });
             }
         }

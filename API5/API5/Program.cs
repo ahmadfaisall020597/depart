@@ -17,6 +17,7 @@ builder.Services.AddScoped<DepartmentRepository>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<EmployeeRepository>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+builder.Services.AddScoped<IRegisterRepository, RegisterRepository>();
 
 var app = builder.Build();
 

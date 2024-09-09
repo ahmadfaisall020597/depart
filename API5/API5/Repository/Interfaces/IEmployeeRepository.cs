@@ -13,7 +13,8 @@ namespace API5.Repository.Interfaces
         int UpdateEmployee(Employee employee);
 
         int DeleteEmployee(string employeeId);
-        Task<Employee> GetByEmployeeIdAsync(object employeeId);
+        Task<Employee> GetByEmployeeIdAsync(string employeeId);
+        Task<Employee?> GetByEmailAsync(string email);
     }
 }
 
