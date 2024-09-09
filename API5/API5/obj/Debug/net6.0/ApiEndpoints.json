@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "API5.Controllers.AccountController",
+    "Method": "GetAllAccounts",
+    "RelativePath": "api/Account/getAllAccounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API5.Controllers.AccountController",
     "Method": "Login",
     "RelativePath": "api/Account/login",
     "HttpMethod": "POST",

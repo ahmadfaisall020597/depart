@@ -13,6 +13,7 @@ namespace API5.Repository.Interfaces
         int UpdateEmployee(Employee employee);
 
         int DeleteEmployee(string employeeId);
+        Task<Employee> GetByEmployeeIdAsync(object employeeId);
     }
 }
 

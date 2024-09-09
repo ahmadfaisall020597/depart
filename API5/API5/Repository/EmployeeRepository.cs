@@ -100,9 +100,21 @@ namespace API5.Repository
 
         }
         public IEnumerable<Employee> GetAllEmployee()
+        {
+            return _myContext.Employees.ToList();
+        }
+
+        public async Task<Employee> GetByEmployeeIdAsync(object employeeId)
+        {
+            if (employeeId == null)
             {
-                return _myContext.Employees.ToList();
-            } 
-       
+                return null;
+            }
+
+            return await _myContext.Employees
+                .Include(e => e.Department)
+                .FirstOrDefaultAsync(e => e.Employee_Id == employeeId.ToString());
+        }
+
     }
 } 

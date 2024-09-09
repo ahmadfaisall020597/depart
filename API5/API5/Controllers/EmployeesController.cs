@@ -17,48 +17,6 @@ namespace API5.Controllers
             _employeeRepository = employeeRepository;
         }
 
-        //[HttpGet]
-        //public IActionResult GetAllEmployeee()
-        //{
-        //    var employeees = _employeeRepository.GetAllEmployeee();
-        //    int employeeCount = employeees.Count();
-
-        //    if (employeees.Any())
-        //    {
-        //        return Ok(new
-        //        {
-        //            Status = 200,
-        //            Message = $"{employeeCount} Data Berhasil Ditemukan",
-        //            AmountOfData = employeeCount,
-        //            Data = employeees
-        //        });
-        //    }
-        //}
-
-        //[HttpGet]
-        //public IActionResult GetAllEmployee()
-        //{
-        //    var employees = _employeeRepository.GetAllEmployee();
-        //    int employeeCount = employees.Count();
-
-        //    if (employees.Any())
-        //    {
-        //        return Ok(new
-        //        {
-        //            Status = 200,
-        //            Message = $"{employeeCount} Data Berhasil Ditemukan",
-        //            AmmountOfData = employeeCount,
-        //            Data = employees
-        //        });
-        //    }
-        //    return NotFound(new
-        //    {
-        //        Status = 404,
-        //        Message = "Tidak Terdapat Data",
-        //        Count = 0
-        //    });
-        //} 
-
         [HttpGet("data")]
         public IActionResult GetAllEmployeeData()
         {
@@ -107,41 +65,6 @@ namespace API5.Controllers
         }
 
 
-        //[HttpGet]
-        //public IActionResult GetAllDepartments()
-        //{
-        //    var departments = _departmentRepository.GetAllDepartment();
-
-        //    if (departments.Count() != 0)
-        //    {
-        //        return Ok(departments);
-        //    }
-        //    else
-        //    {
-        //        return NotFound("Tidak Terdapat Data");
-        //    }
-        //}
-
-        //[HttpGet("{employeeId}")]
-        //public IActionResult GetEmployeeById(string employeeId)
-        //{
-        //    var employee = _employeeRepository.GetEmployeeById(employeeId);
-        //    if (employee == null)
-        //    {
-        //        return NotFound(new
-        //        {
-        //            Status = 404,
-        //            Message = "Data Tidak Ditemukan"
-        //        });
-        //    }
-        //    return Ok(new
-        //    {
-        //        Status = "200",
-        //        Message = "Data Berhasil Ditemukan",
-        //        Data = employee
-        //    });
-        //}
-
         [HttpGet("{employeeId}")]
         public IActionResult GetEmployeeById(string employeeId)
         {
@@ -182,19 +105,6 @@ namespace API5.Controllers
                 });
             }
         }
-
-        //[HttpPut("{deptId}")]
-        //public IActionResult UpdateDepartment(Department department)
-        //{
-        //    var updateDepartment = _departmentRepository.UpdateDepartment(department);
-
-        //    if (updateDepartment > 0)
-        //    {
-        //        return Ok();
-
-        //    }
-        //    return NotFound();
-        //}
 
         [HttpPut("{employeeId}")]
         public IActionResult UpdateEmployee(Employee employee)

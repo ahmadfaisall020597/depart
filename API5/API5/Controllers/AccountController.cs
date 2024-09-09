@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using BCrypt.Net;
+using API5.Repository.Interfaces;
 
 namespace API5.Controllers
 {
@@ -12,27 +13,24 @@ namespace API5.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private readonly MyContext _context;
+        private readonly IAccountRepository _accountRepository;
+        private readonly IEmployeeRepository _employeeRepository;
 
-        public AccountController(MyContext context)
+        public AccountController(IAccountRepository accountRepository, IEmployeeRepository employeeRepository)
         {
-            _context = context;
+            _accountRepository = accountRepository;
+            _employeeRepository = employeeRepository;
         }
 
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
-            if (string.IsNullOrEmpty(request.Password) ||
-                string.IsNullOrEmpty(request.Email) ||
-                string.IsNullOrEmpty(request.EmployeeId))
+            if (string.IsNullOrEmpty(request.Password) || string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.EmployeeId))
             {
                 return BadRequest("All fields except Username are required.");
             }
 
-            var employee = await _context.Employees
-                .Include(e => e.Department)
-                .Where(e => e.Employee_Id == request.EmployeeId)
-                .FirstOrDefaultAsync();
+            var employee = await _employeeRepository.GetByEmployeeIdAsync(request.EmployeeId);
 
             if (employee == null)
             {
@@ -40,8 +38,8 @@ namespace API5.Controllers
             }
 
             string baseUsername = string.IsNullOrEmpty(request.Username)
-        ? $"{employee.FirstName.ToLower()}{employee.LastName.ToLower()}".Replace(" ", "")
-        : request.Username.ToLower().Replace(" ", "");
+                ? $"{employee.FirstName.ToLower()}{employee.LastName.ToLower()}".Replace(" ", "")
+                : request.Username.ToLower().Replace(" ", "");
 
             string username = await GenerateUniqueUsername(baseUsername);
 
@@ -53,8 +51,7 @@ namespace API5.Controllers
                 Employee = employee
             };
 
-            _context.Accounts.Add(account);
-            await _context.SaveChangesAsync();
+            await _accountRepository.AddAsync(account);
 
             var response = new
             {
@@ -78,7 +75,7 @@ namespace API5.Controllers
             string username = baseUsername;
             int suffix = 1;
 
-            while (await _context.Accounts.AnyAsync(a => a.Username == username))
+            while (await _accountRepository.GetByUsernameAsync(username) != null)
             {
                 username = $"{baseUsername}{suffix:D3}";
                 suffix++;
@@ -95,27 +92,45 @@ namespace API5.Controllers
                 return BadRequest("Username and Password are required.");
             }
 
-            var account = await _context.Accounts
-                .Include(a => a.Employee)
-                .Where(a => a.Username == request.Username)
-                .FirstOrDefaultAsync();
+            var account = await _accountRepository.GetByUsernameAsync(request.Username);
 
             if (account == null || !BCrypt.Net.BCrypt.Verify(request.Password, account.Password))
             {
                 return Unauthorized("Invalid username or password.");
             }
 
-            var response = new
-            {
-                status = 200,
-                message = "Login successful.",
-            };
+            return Ok(new { status = 200, message = "Login successful." });
+        }
 
-            return Ok(response);
+        [HttpGet("getAllAccounts")]
+        public async Task<IActionResult> GetAllAccounts()
+        {
+            var accounts = await _accountRepository.GetAllAccountsAsync();
+
+            if (accounts == null || accounts.Count == 0)
+            {
+                return NotFound("No accounts found.");
+            }
+
+            var response = accounts.Select(account => new
+            {
+                account_Id = account.AccountId,
+                fullName = $"{account.Employee?.FirstName} {account.Employee?.LastName}",
+                dept_Name = account.Employee?.Department?.Dept_Name ?? "No Department",
+                email = account.Employee?.Email,
+                username = account.Username
+            }).ToList();
+
+            return Ok(new
+            {
+                statusCode = 200,
+                status = "Success",
+                message = $"{accounts.Count} accounts retrieved successfully.",
+                data = response
+            });
         }
     }
-
-    public class RegisterRequest
+public class RegisterRequest
     {
         public string? Username { get; set; }
         public string Password { get; set; } = string.Empty;
